@@ -10,27 +10,27 @@ A movies and shows watchlist for keeping track of currently watching shows and m
 
 ### MOVIE
 
-\_id: MOVIE_ID,
-MovieTitle: String,
-Genre: String[],
-VideoLink: URL,
-PosterLink: URL,
-AverageRating: Number,
-Logs: LOG_ID[]
+- \_id: MOVIE_ID,
+- MovieTitle: String,
+- Genre: String[],
+- VideoLink: URL,
+- PosterLink: URL,
+- AverageRating: Number,
+- Logs: LOG_ID[]
 
 ### USER
 
-\_id: USER_ID,
-Movies: MOVIE_ID[]
-Logs: LOG_ID[]
+- \_id: USER_ID,
+- Movies: MOVIE_ID[]
+- Logs: LOG_ID[]
 
 ### LOG
 
-\_id: LOG_ID
-Movie: MOVIE_ID
-Comments: String,
-Rating: Number,
-CurrentEpisode: Number
+- \_id: LOG_ID
+- Movie: MOVIE_ID
+- Comments: String,
+- Rating: Number,
+- CurrentEpisode: Number
 
 ### Scrum manager/project manager's name
 

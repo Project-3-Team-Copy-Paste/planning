@@ -1,44 +1,43 @@
-## Your group members
+### Your group members
+Vlad, Edward, Jon
 
-Edward, Jon, Vlad
+### Your project idea 
+>Brief 2-3 sentence description of your app
+An app for keeping track of, ranking, and reviewing previously watched movies. Through an external, third-party API, the user can search a database of movies and create their own reviews/ratings of movies once they're finished, which will then be stored and tracked through our database.
 
-## Your project idea
+### List of models and their properties
 
-A movies for keeping track of currently watching shows and movies as well as ranking previously watched shows and movies. Through an external, third-party API, the user can search a database of movies and create their own reviews/ratings of shows once they're finished, which will then be stored and tracked through our database.
-
-## List of models and their properties
-
-### REEL (MVP)
-
-- \_id: REEL_ID
-- Movie: MOVIE_ID
-- Review: String,
+### Review (MVP)
+- \_id: Review_ID
+- Movie: Movie_ID
+- Title: String,
+- Body: String
 - Rating: Number,
-
-### MOVIE (STRETCH)
-
-- \_id: MOVIE_ID,
-- MovieTitle: String,
-- Genre: String[],
-- VideoLink: URL,
-- PosterLink: URL,
-- AverageRating: Number,
-- Logs: LOG_ID[]
+- Author: USER_ID
+- Timestamp: True
 
 ### USER (STRETCH)
-
-- \_id: USER_ID,
-- Movies: MOVIE_ID[]
-- Logs: LOG_ID[]
+- \_id: User_ID,
+- Movies: [
+    movie: {
+        id: Movie_ID,
+        finished: Boolean
+    } 
+]
+- Reviews: [Review_ID]
 
 ### Scrum manager/project manager's name
-TOM THE AIDE
+- Edward
 
 ### User stories
 MVP:
-- aauiwlt: Create, read, update, and delete "reels" for specific movies.
-- aauiwlt: See all the reels for specific movies.
-- aauiwlt: See all the movies for which I can create reels.
+- aauiwlt: Compile a library of movies I've seen and/or movies I would like to watch in the future.
+- aauiwlt: Create, read, update, and delete reviews for specific movies.
+- aauiwlt: See all the reviews for specific movies.
+
+Stretch:
+- aauiwlt: See all reviews written by specific users. 
+- aauiwlt: See the library of movies I've built.
 
 ### Wireframes
 [The MIRO board.](https://miro.com/app/board/uXjVPNFJ2Pc=/) 
